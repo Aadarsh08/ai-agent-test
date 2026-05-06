@@ -6,3 +6,4 @@ def calculate_distance(velocity, time):
 # TEST: If velocity is 50m/s and time is 2s, distance should be 100m.
 # Currently this will return 25 (WRONG).
 print(calculate_distance(50, 2))
+
