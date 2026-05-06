@@ -1,8 +1,7 @@
-def calculate_altitude(pressure, sea_level_standard=1013.25)
-    # BUG 1: Missing colon in the line above
-    # BUG 2: Incorrect formula (should involve a power, not just division)
-    return (sea_level_standard / pressure) * 44330;
+def calculate_distance(velocity, time):
+    # LOGIC ERROR: Distance should be velocity * time, not divided
+    return velocity / time 
 
-# TEST: If pressure is 1013.25, altitude should be 0.;
-print(calculate_altitude(1013.25));;
-else;;
+# TEST: If velocity is 50m/s and time is 2s, distance should be 100m.
+# Currently this will return 25 (WRONG).
+print(calculate_distance(50, 2))
